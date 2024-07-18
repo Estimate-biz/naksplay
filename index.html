@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" sizes="32x32" type="image/png"
+        href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" media="screen and (max-width: 426px)" href="css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="flex">
+
+        <div class="left flex flex-clmn">
+
+            <div class="menu flex round">
+                <div class="flex justify-center flex-clmn">
+                    <img class="filter img" src="images/logo.svg" alt="Spotify" />
+                    <ul>
+                        <li>
+                            <box-icon class="filter" type='solid' name='home'></box-icon>
+                            Home
+                        </li>
+                        <li>
+                            <box-icon class="filter" name='search'></box-icon>
+                            Search
+                        </li>
+                    </ul>
+                </div>
+                <i class='bx bx-x-circle cross'></i>
+            </div>
+            <div class="library round">
+                <button class="flex library-btn">
+                    <img class="filter" src="images/library_icon.svg" alt="img">Your Library
+                </button>
+                <div class="container">
+                    <ul class="song-ul">
+                        
+                    </ul>
+                </div>
+                <div class="footer grid">
+                    <span class="footer-text">@Youtube</span>
+                    <span class="footer-text">@instagram</span>
+                    <span class="footer-text">@twitter</span>
+                    <span class="footer-text">Contact</span>
+                    <span class="footer-text">contact@nexplay.com</span>
+                    <span class="footer-text">naksplay.com</span>
+                    <span class="footer-text underline">Global Support</span>
+                </div>
+                <a class="language"><box-icon class="filter icon" name='globe'></box-icon>All Rights Reserved</a>
+            </div>
+        </div>
+
+        <div class="right round relative">
+            <div class="playlist">
+                <div class="headOfRight">
+                    <h1>Spotify Playlist</h1>
+                    <i class='bx bx-menu menu-icon'></i>
+                </div>
+                <div class="cards-list">
+                    <div class="card" data-playlistName="folk">
+                        <img src="https://i.scdn.co/image/ab67706f000000025e9914caee21f8ce1418df46" alt="Kendric Lamar">
+                        <h4>Folk of All Time</h4>
+                        <span>Kendric Lamar is top of the hottest</span>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekBar">
+                    <div class="mover"></div>
+                </div>
+                <div class="title">
+                    <h2 class="song-info">Song Name</h2>
+                </div>
+                <div class="buttons">
+                    <i class='bx bx-skip-previous icons' id="previous-btn"></i>
+                    <i class='bx bx-play-circle icons' id="play-btn"></i>
+                    <i class='bx bx-skip-next icons' id="next-btn"></i>
+                </div>
+                <div class="volume">
+                    <!-- <i class='bx bxs-volume-full'></i> -->
+                    <span id="songLength">00:00 / 00:00</span>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>

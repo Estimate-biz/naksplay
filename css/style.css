@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 10px 8px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Fustat", sans-serif;
+    font-weight: 800;
+}
+
+main{
+    height: 97vh;
+    gap: 10px;
+}
+
+.left{
+    flex-basis: 27%;
+    height: 97vh;
+    gap: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.menu{
+    background-color: #121212;
+    padding: 20px 40px;
+    flex-basis: 20%;
+    justify-content: space-between;
+}
+
+.menu .cross{
+    font-size: 40px;
+    display: none;
+}
+
+.menu ul{
+    list-style:  none;
+}
+
+.menu ul li{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    line-height: 28px;
+}
+
+.library{
+    position: relative;
+    background-color: #121212;
+    flex-basis: 80%;
+    padding: 15px;
+}
+
+.library-btn{
+    background: none;
+    border: 0;
+    outline: none;
+    gap: 15px;
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Fustat", sans-serif;
+    font-weight: 800;
+}
+
+.library-btn img{
+    width: 25px;
+}
+
+.container{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 200px;
+    padding: 5px;
+}
+
+.tile h6{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer{
+    border-top: 2px solid hsl(0, 0%, 16%);
+}
+
+.footer-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #a7a7a7;
+}
+
+.language{
+    border: 2px solid #a7a7a7;
+    border-radius: 20px;
+    padding: 5px 10px 5px 35px;
+    position: relative;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.language .icon{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+.right{
+    flex-basis: 83%;
+    background-color: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.playlist{
+    width: 100%;    
+    height: 100%;
+    padding: 25px 40px;
+    overflow-y: scroll;
+}
+
+.playlist h1{
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.cards-list{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 250px;
+}
+
+.cards-list .card{
+    width: 10rem; 
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cards-list .card:hover{
+    background-color: #191919;
+    transition: all 0.41s;
+}
+
+.card img{  
+    width: 100%;
+    object-fit: contain;
+}
+
+.cards-list .card span{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #a7a7a7;
+}
+
+.artist{
+    border-radius: 50%;
+}
+
+.playbar{
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* background-color: #1ed760; */
+    background-color: #051a30;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 5px;
+    vertical-align: middle;
+    /* justify-content: space-between; */
+    height: 60px;
+}
+
+.playbar .seekBar{
+    position: absolute;
+    left: 4px;
+    /* padding: 0 10px; */
+    top: 5px;
+    width: 92%;
+    height: 2px;
+    background-color: #e4e4e4;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.playbar .seekBar .mover{
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: linear 0.4s;
+}
+
+.playbar h2{
+    font-weight: 800;
+    padding-top: 14px;
+    width: 250px;
+}
+
+.playbar .buttons{
+    /* position: absolute;
+    left: 400px;
+    bottom: 7px; */
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 9;
+    filter: invert(1);
+    padding-right: 268px;
+    padding-left: 151px;
+}
+/* 
+.playbar .buttons .song-info{
+    padding-right: 50px;
+} */
+
+.headOfRight .menu-icon{
+    display: none;
+}
+
+.playbar .buttons .icons{
+    font-size: 40px;
+    color: #191919;
+    padding-top: 12px;
+}
+
+.playbar .buttons .icons:nth-child(2){
+    font-size: 50px;
+    padding-top: 6px;
+}
+
+.volume .bxs-volume-full{
+    /* padding-right: 80px; */
+    font-size: 40px;
+    padding-top: 18px;
+}
+
+.volume #songLength{
+    padding-right: 50px;
+}
+
+.songName{
+    list-style: none;
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .playbar{
+        padding: 0 11px;
+        height: 137px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .playbar h2{
+        font-size: 20px;
+        width: 350px;
+        padding: 0;
+        /* padding-bottom: 60px; */
+    }
+    
+    .playbar .buttons{
+        padding-left: 0;
+        padding-right: 35px;
+        /* padding-top: 60px; */
+        /* position: absolute; */
+        padding-left: 7rem;
+    }
+    
+    
+    .volume{
+        height: 60px;
+        /* padding-bottom: 60px; */
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 9px;
+    }
+    
+    .volume span{
+        line-height: 70px;
+        /* align-items: right; */
+    }
+}
